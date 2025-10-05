@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cae19579-ad67-4a34-b2b1-db4261aa6c68">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+    ROW_NUMBER() OVER (ORDER BY motor.`id_motor`) AS motor_id_motor,
+     motor.`merk` AS motor_merk,
+     motor.`harga` AS motor_harga,
+     motor.`tahun_produksi` AS motor_tahun_produksi,
+     motor.`kondisi_mesin` AS motor_kondisi_mesin,
+     motor.`konsumsi_bbm` AS motor_konsumsi_bbm,
+     motor.`tampilan_fisik` AS motor_tampilan_fisik
+FROM
+     `motor` motor
+ORDER BY
+	'id_motor']]>
+	</queryString>
+	<field name="motor_id_motor" class="java.lang.Long"/>
+	<field name="motor_merk" class="java.lang.String"/>
+	<field name="motor_harga" class="java.lang.String"/>
+	<field name="motor_tahun_produksi" class="java.lang.String"/>
+	<field name="motor_kondisi_mesin" class="java.lang.String"/>
+	<field name="motor_konsumsi_bbm" class="java.lang.String"/>
+	<field name="motor_tampilan_fisik" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="112" y="56" width="340" height="14" uuid="72cd814d-2915-4d16-a347-f3c6aea74a5d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Jalan Mandor Samin No.184, Kota Depok, Jawa Barat. No.Telp: 0817]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="6" width="340" height="25" uuid="c55b2dec-489c-48de-a3c8-e16303a5a396"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Showroom Garasi JualBeli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="31" width="340" height="25" uuid="ecd2edb0-422b-4d85-8643-4bccb908f666"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Buy&Sell]]></text>
+			</staticText>
+			<line>
+				<reportElement x="40" y="70" width="484" height="1" uuid="40724385-5e7e-48df-8a28-feb1ca8206ee"/>
+			</line>
+			<image>
+				<reportElement x="40" y="0" width="72" height="70" uuid="28d6e620-f5d4-482e-a9c2-6b0b9235b79c"/>
+				<imageExpression><![CDATA["D:\\tugas\\Semester 8\\Project Tugas Akhir\\TugasAkhir\\src\\Logo\\Logo_GJB_FIX_2-removebg-preview.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="452" y="1" width="72" height="70" uuid="718f44cf-477a-4520-9720-7088696dae61"/>
+				<imageExpression><![CDATA["D:\\tugas\\Semester 8\\Project Tugas Akhir\\TugasAkhir\\src\\Logo\\Logo_GJB_FIX_2-removebg-preview.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="0" width="125" height="20" uuid="095bc705-0b28-41ad-9c0a-34fa14dbb94f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[Data Sepeda Motor]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="39" y="1" width="55" height="20" uuid="59b40472-6235-459e-b845-35909dd89f89"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[ID Motor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="1" width="75" height="20" uuid="4abdd0f4-778d-4657-9598-fa7f3bf6b8c5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Merek Motor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="1" width="74" height="20" uuid="e86cd1da-1d39-4681-bd09-e38e232b7a96"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Harga Motor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="1" width="81" height="20" uuid="ce04ec51-c106-456d-992b-e35693f9c6c0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Tahun Produksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="1" width="68" height="20" uuid="c2428d44-9fe2-4586-8329-71057b1db49b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Kondisi Mesin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="1" width="76" height="20" uuid="4ab9e65f-3b8d-449a-b98f-9d6ec6157365"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Konsumsi BBM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="468" y="1" width="69" height="20" uuid="52ec9673-30fa-4c23-8a9c-68e866c835dd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Tampilan Fisik]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="39" y="0" width="55" height="20" uuid="cc37b6c8-05e6-4c82-8a2d-dbf073c1d00b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motor_id_motor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="0" width="75" height="20" uuid="0848fcf5-9951-41ea-b47b-c71ae7b9814b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motor_merk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="0" width="74" height="20" uuid="b0a20e8f-9a0b-4805-b935-dafab07ab349"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motor_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="243" y="0" width="81" height="20" uuid="ed60df93-0ae6-40b3-a3c5-30989f69d39e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motor_tahun_produksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="0" width="68" height="20" uuid="41a4c095-0eae-4e1c-884d-2e71f06d0906"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motor_kondisi_mesin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="392" y="0" width="76" height="20" uuid="686f9c28-7246-4096-92d0-1a4e95f8218d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motor_konsumsi_bbm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="0" width="69" height="20" uuid="0cd06b0a-c69a-43db-bd40-be498573e4d1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motor_tampilan_fisik}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="123" splitType="Stretch">
+			<staticText>
+				<reportElement x="410" y="20" width="127" height="13" uuid="e3f075d7-bd28-404e-aaa7-08de91e4bccc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Owner Showroom]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="0" width="127" height="20" uuid="dc8f6441-012a-4c3b-9418-d446f40fbbaf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Depok,  Minggu 29 Juni 2025]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="101" width="127" height="20" uuid="975aecbe-a0f0-48d8-a675-32d182005599"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Muhammad Yusuf]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

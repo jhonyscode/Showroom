@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1451ea4e-3cc7-4427-9436-ae403a667ce2">
+	<property name="ireport.zoom" value="1.9487171000000016"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     penilaian.`id_motor` AS penilaian_id_motor,
+     penilaian.`id_penilaian` AS penilaian_id_penilaian,
+     penilaian.`harga` AS penilaian_harga,
+     penilaian.`tahun_produksi` AS penilaian_tahun_produksi,
+     penilaian.`kondisi_mesin` AS penilaian_kondisi_mesin,
+     penilaian.`konsumsi_bbm` AS penilaian_konsumsi_bbm,
+     penilaian.`kondisi_fisik` AS penilaian_kondisi_fisik
+FROM
+     `penilaian` penilaian]]>
+	</queryString>
+	<field name="penilaian_id_motor" class="java.lang.String"/>
+	<field name="penilaian_id_penilaian" class="java.lang.String"/>
+	<field name="penilaian_harga" class="java.lang.Integer"/>
+	<field name="penilaian_tahun_produksi" class="java.lang.Integer"/>
+	<field name="penilaian_kondisi_mesin" class="java.lang.Integer"/>
+	<field name="penilaian_konsumsi_bbm" class="java.lang.Integer"/>
+	<field name="penilaian_kondisi_fisik" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<image>
+				<reportElement x="35" y="1" width="72" height="70" uuid="d903c6e0-64a8-4415-b684-c225697574ea"/>
+				<imageExpression><![CDATA["D:\\tugas\\Semester 8\\Project Tugas Akhir\\TugasAkhir\\src\\Logo\\Logo_GJB_FIX_2-removebg-preview.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="107" y="56" width="340" height="14" uuid="672d7673-adde-41c0-8314-d0ed121f6e84"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Jalan Mandor Samin No.184, Kota Depok, Jawa Barat. No.Telp: 0817]]></text>
+			</staticText>
+			<image>
+				<reportElement x="447" y="0" width="72" height="70" uuid="b1734da9-a217-4702-9941-6ad0fed630ae"/>
+				<imageExpression><![CDATA["D:\\tugas\\Semester 8\\Project Tugas Akhir\\TugasAkhir\\src\\Logo\\Logo_GJB_FIX_2-removebg-preview.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="107" y="6" width="340" height="25" uuid="12c1ad08-ceea-4e53-bd0f-f53f48fdffb8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Showroom Garasi JualBeli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="31" width="340" height="25" uuid="2ef724d4-9504-4196-b4b5-a00abb39eea2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Buy&Sell]]></text>
+			</staticText>
+			<line>
+				<reportElement x="35" y="70" width="484" height="1" uuid="3e023e9c-2887-47e8-9b48-8aff7981ddad"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="212" y="0" width="125" height="20" uuid="2a1537ec-f736-476e-9909-1284bf2a1587"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[Data Penilaian]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="36" y="0" width="53" height="33" uuid="236dd94e-c7a1-4fa1-ad21-1d9a4c9da479"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[ID Motor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="0" width="94" height="33" uuid="e1561267-4468-438a-b6c5-8cdd24d5649c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Penilaian Konsumsi BBM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="0" width="65" height="33" uuid="0775aada-54ba-4d71-bdb0-573f1168208d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[ID Penilaian]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="436" y="0" width="83" height="33" uuid="99994d63-de15-402b-9f67-9603a4b3f421"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Penilaian Kondisi Fisik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="154" y="0" width="55" height="33" uuid="4c52aaa9-7d7f-47b2-be2e-5222c837b962"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Penilaian Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="0" width="55" height="33" uuid="3a5b1eca-278d-4c6c-9989-23ba25e443cd"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Penilaian Tahun]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="0" width="78" height="33" uuid="8f40f88e-6a76-4095-87ee-9c4ff22c6103"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Penilaian Kondisi Mesin]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="36" y="0" width="53" height="20" uuid="b4f6b7fc-64be-4d90-ac84-93c348fa8674"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penilaian_id_motor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="0" width="65" height="20" uuid="53df83b0-888a-4740-8592-09a41e4f3e52"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penilaian_id_penilaian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="154" y="0" width="55" height="20" uuid="08a543bf-34cb-41da-ba9e-56cd80d7aa79"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penilaian_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="209" y="0" width="55" height="20" uuid="cbce86e6-27fd-4b8d-8629-98e32ce8691a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penilaian_tahun_produksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="0" width="78" height="20" uuid="ff4450a0-d267-41a1-898a-d9bda508fad8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penilaian_kondisi_mesin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="0" width="94" height="20" uuid="3914e77a-c41b-4280-a3b7-ec4f65bef0dc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penilaian_konsumsi_bbm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="436" y="0" width="83" height="20" uuid="fe12de4c-1f0a-41d9-8356-d8c371724e63"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{penilaian_kondisi_fisik}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="123" splitType="Stretch">
+			<staticText>
+				<reportElement x="392" y="101" width="127" height="20" uuid="e58b3047-00d9-45f9-b9fd-1562eb17c368"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Muhammad Yusuf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="20" width="127" height="13" uuid="61292d95-944d-48ae-9e06-89519a8c7138"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Owner Showroom]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="0" width="127" height="20" uuid="c3af1bcf-a8cf-4524-938e-6b21627d9ceb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Depok,  Minggu 29 Juni 2025]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
