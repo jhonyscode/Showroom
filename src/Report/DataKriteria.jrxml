@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0f6de66f-7689-424e-9ad1-9eca9d97c382">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="39"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     kriteria.`id` AS kriteria_id,
+     kriteria.`kriteria` AS kriteria_kriteria,
+     kriteria.`bobot` AS kriteria_bobot,
+     kriteria.`jenis` AS kriteria_jenis
+FROM
+     `kriteria` kriteria]]>
+	</queryString>
+	<field name="kriteria_id" class="java.lang.String"/>
+	<field name="kriteria_kriteria" class="java.lang.String"/>
+	<field name="kriteria_bobot" class="java.lang.Double"/>
+	<field name="kriteria_jenis" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="108" y="56" width="340" height="14" uuid="20e9629e-fc06-4d19-a0d1-af1c76f15cc3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<text><![CDATA[Jalan Mandor Samin No.184, Kota Depok, Jawa Barat. No.Telp: 0817]]></text>
+			</staticText>
+			<line>
+				<reportElement x="36" y="70" width="484" height="1" uuid="ea542d03-9528-4cc8-b1a1-06ea1ad15382"/>
+			</line>
+			<staticText>
+				<reportElement x="108" y="31" width="340" height="25" uuid="c0363e5a-6c5e-443f-ac24-dacbd7ffc3bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Buy&Sell]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="6" width="340" height="25" uuid="eb1e2c4a-a6ed-4d56-b1cb-af9bcdfae6e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Showroom Garasi JualBeli]]></text>
+			</staticText>
+			<image>
+				<reportElement x="448" y="0" width="72" height="70" uuid="2ed08438-c3d7-480e-9e19-58ce700fa79c"/>
+				<imageExpression><![CDATA["D:\\tugas\\Semester 8\\Project Tugas Akhir\\TugasAkhir\\src\\Logo\\Logo_GJB_FIX_2-removebg-preview.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="36" y="1" width="72" height="70" uuid="d5355e3b-1824-45d2-88d1-a742434af9bb"/>
+				<imageExpression><![CDATA["D:\\tugas\\Semester 8\\Project Tugas Akhir\\TugasAkhir\\src\\Logo\\Logo_GJB_FIX_2-removebg-preview.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="218" y="0" width="125" height="20" uuid="ba30a505-2ada-424c-9619-5f55bd3755bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[Data Kriteria]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="77" y="0" width="100" height="20" uuid="26568c91-a57e-4bc0-9368-5b3a3012a2de"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[ID Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="0" width="100" height="20" uuid="bbb145f1-b224-47d4-96b6-07bc1e2abde0"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="0" width="100" height="20" uuid="c478b8a9-4296-4ecf-8347-8180970c5d48"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Bobot Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="377" y="0" width="100" height="20" uuid="be889196-864a-4af4-9b04-aa14825f787d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Jenis Kriteria]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="77" y="0" width="100" height="20" uuid="6aba0d7d-7a00-47c5-88a5-fbc0045e70ce"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kriteria_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="0" width="100" height="20" uuid="959fcaa5-ea8f-4507-b679-fe670350ca41"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kriteria_kriteria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="277" y="0" width="100" height="20" uuid="23fafed4-702c-49ee-a8f6-8e8ea2cfd0c1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kriteria_bobot}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="377" y="0" width="100" height="20" uuid="5923b83f-a744-4750-91e5-6db7ea625edc"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kriteria_jenis}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="122" splitType="Stretch">
+			<staticText>
+				<reportElement x="393" y="101" width="127" height="20" uuid="5afabdf6-c1e2-4962-9e80-1807c5ab9cbb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Muhammad Yusuf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="0" width="127" height="20" uuid="02ebe852-72b7-4556-9a51-b5cf612c7bcd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Depok,  Minggu 29 Juni 2025]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="393" y="20" width="127" height="13" uuid="7a497b0c-4788-430b-a49b-fbdccf8616db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Owner Showroom]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="47" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
